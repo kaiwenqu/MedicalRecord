@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F0205AC171CA41200C3ED03 /* SBJson.h in Sources */ = {isa = PBXBuildFile; fileRef = 2F0205AB171CA41200C3ED03 /* SBJson.h */; };
+		2F0205C2171CA45A00C3ED03 /* SBJsonParser.h in Sources */ = {isa = PBXBuildFile; fileRef = 2F0205AE171CA45A00C3ED03 /* SBJsonParser.h */; };
+		2F0205C3171CA45A00C3ED03 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0205AF171CA45A00C3ED03 /* SBJsonParser.m */; };
+		2F0205C4171CA45A00C3ED03 /* SBJsonStreamParser.h in Sources */ = {isa = PBXBuildFile; fileRef = 2F0205B0171CA45A00C3ED03 /* SBJsonStreamParser.h */; };
+		2F0205C5171CA45A00C3ED03 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0205B1171CA45A00C3ED03 /* SBJsonStreamParser.m */; };
+		2F0205C6171CA45A00C3ED03 /* SBJsonStreamParserAccumulator.h in Sources */ = {isa = PBXBuildFile; fileRef = 2F0205B2171CA45A00C3ED03 /* SBJsonStreamParserAccumulator.h */; };
+		2F0205C7171CA45A00C3ED03 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0205B3171CA45A00C3ED03 /* SBJsonStreamParserAccumulator.m */; };
+		2F0205C8171CA45A00C3ED03 /* SBJsonStreamParserAdapter.h in Sources */ = {isa = PBXBuildFile; fileRef = 2F0205B4171CA45A00C3ED03 /* SBJsonStreamParserAdapter.h */; };
+		2F0205C9171CA45A00C3ED03 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0205B5171CA45A00C3ED03 /* SBJsonStreamParserAdapter.m */; };
+		2F0205CA171CA45A00C3ED03 /* SBJsonStreamParserState.h in Sources */ = {isa = PBXBuildFile; fileRef = 2F0205B6171CA45A00C3ED03 /* SBJsonStreamParserState.h */; };
+		2F0205CB171CA45A00C3ED03 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0205B7171CA45A00C3ED03 /* SBJsonStreamParserState.m */; };
+		2F0205CC171CA45A00C3ED03 /* SBJsonStreamTokeniser.h in Sources */ = {isa = PBXBuildFile; fileRef = 2F0205B8171CA45A00C3ED03 /* SBJsonStreamTokeniser.h */; };
+		2F0205CD171CA45A00C3ED03 /* SBJsonStreamTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0205B9171CA45A00C3ED03 /* SBJsonStreamTokeniser.m */; };
+		2F0205CE171CA45A00C3ED03 /* SBJsonStreamWriter.h in Sources */ = {isa = PBXBuildFile; fileRef = 2F0205BA171CA45A00C3ED03 /* SBJsonStreamWriter.h */; };
+		2F0205CF171CA45A00C3ED03 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0205BB171CA45A00C3ED03 /* SBJsonStreamWriter.m */; };
+		2F0205D0171CA45A00C3ED03 /* SBJsonStreamWriterAccumulator.h in Sources */ = {isa = PBXBuildFile; fileRef = 2F0205BC171CA45A00C3ED03 /* SBJsonStreamWriterAccumulator.h */; };
+		2F0205D1171CA45A00C3ED03 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0205BD171CA45A00C3ED03 /* SBJsonStreamWriterAccumulator.m */; };
+		2F0205D2171CA45A00C3ED03 /* SBJsonStreamWriterState.h in Sources */ = {isa = PBXBuildFile; fileRef = 2F0205BE171CA45A00C3ED03 /* SBJsonStreamWriterState.h */; };
+		2F0205D3171CA45A00C3ED03 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0205BF171CA45A00C3ED03 /* SBJsonStreamWriterState.m */; };
+		2F0205D4171CA45A00C3ED03 /* SBJsonWriter.h in Sources */ = {isa = PBXBuildFile; fileRef = 2F0205C0171CA45A00C3ED03 /* SBJsonWriter.h */; };
+		2F0205D5171CA45A00C3ED03 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0205C1171CA45A00C3ED03 /* SBJsonWriter.m */; };
 		2F4BD1A0170DFFD300D20F4A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4BD19F170DFFD300D20F4A /* UIKit.framework */; };
 		2F4BD1A2170DFFD300D20F4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4BD1A1170DFFD300D20F4A /* Foundation.framework */; };
 		2F4BD1A4170DFFD300D20F4A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4BD1A3170DFFD300D20F4A /* CoreGraphics.framework */; };
@@ -20,9 +41,32 @@
 		2F4BD1BC170DFFD400D20F4A /* UWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4BD1BB170DFFD400D20F4A /* UWViewController.m */; };
 		2F4BD1C4170E009500D20F4A /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4BD1C3170E009500D20F4A /* RegisterController.m */; };
 		2F4BD1C6170E941F00D20F4A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4BD1C5170E941F00D20F4A /* libsqlite3.dylib */; };
+		2FB7675C1713FC9000284D8D /* MedicalInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB7675B1713FC9000284D8D /* MedicalInfoController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F0205AB171CA41200C3ED03 /* SBJson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SBJson.h; path = MedicalRecord/SBJson.h; sourceTree = "<group>"; };
+		2F0205AD171CA45A00C3ED03 /* SBJson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SBJson.h; path = MedicalRecord/SBJson.h; sourceTree = "<group>"; };
+		2F0205AE171CA45A00C3ED03 /* SBJsonParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = MedicalRecord/SBJsonParser.h; sourceTree = "<group>"; };
+		2F0205AF171CA45A00C3ED03 /* SBJsonParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = MedicalRecord/SBJsonParser.m; sourceTree = "<group>"; };
+		2F0205B0171CA45A00C3ED03 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParser.h; path = MedicalRecord/SBJsonStreamParser.h; sourceTree = "<group>"; };
+		2F0205B1171CA45A00C3ED03 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParser.m; path = MedicalRecord/SBJsonStreamParser.m; sourceTree = "<group>"; };
+		2F0205B2171CA45A00C3ED03 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAccumulator.h; path = MedicalRecord/SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		2F0205B3171CA45A00C3ED03 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAccumulator.m; path = MedicalRecord/SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		2F0205B4171CA45A00C3ED03 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAdapter.h; path = MedicalRecord/SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		2F0205B5171CA45A00C3ED03 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAdapter.m; path = MedicalRecord/SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		2F0205B6171CA45A00C3ED03 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserState.h; path = MedicalRecord/SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		2F0205B7171CA45A00C3ED03 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserState.m; path = MedicalRecord/SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		2F0205B8171CA45A00C3ED03 /* SBJsonStreamTokeniser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamTokeniser.h; path = MedicalRecord/SBJsonStreamTokeniser.h; sourceTree = "<group>"; };
+		2F0205B9171CA45A00C3ED03 /* SBJsonStreamTokeniser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamTokeniser.m; path = MedicalRecord/SBJsonStreamTokeniser.m; sourceTree = "<group>"; };
+		2F0205BA171CA45A00C3ED03 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriter.h; path = MedicalRecord/SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		2F0205BB171CA45A00C3ED03 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriter.m; path = MedicalRecord/SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		2F0205BC171CA45A00C3ED03 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterAccumulator.h; path = MedicalRecord/SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		2F0205BD171CA45A00C3ED03 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterAccumulator.m; path = MedicalRecord/SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		2F0205BE171CA45A00C3ED03 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterState.h; path = MedicalRecord/SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		2F0205BF171CA45A00C3ED03 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterState.m; path = MedicalRecord/SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		2F0205C0171CA45A00C3ED03 /* SBJsonWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = MedicalRecord/SBJsonWriter.h; sourceTree = "<group>"; };
+		2F0205C1171CA45A00C3ED03 /* SBJsonWriter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = MedicalRecord/SBJsonWriter.m; sourceTree = "<group>"; };
 		2F4BD19C170DFFD300D20F4A /* MedicalRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F4BD19F170DFFD300D20F4A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2F4BD1A1170DFFD300D20F4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,6 +86,8 @@
 		2F4BD1C2170E009500D20F4A /* RegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
 		2F4BD1C3170E009500D20F4A /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
 		2F4BD1C5170E941F00D20F4A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		2FB7675A1713FC9000284D8D /* MedicalInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicalInfoController.h; sourceTree = "<group>"; };
+		2FB7675B1713FC9000284D8D /* MedicalInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicalInfoController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +108,28 @@
 		2F4BD193170DFFD300D20F4A = {
 			isa = PBXGroup;
 			children = (
+				2F0205AD171CA45A00C3ED03 /* SBJson.h */,
+				2F0205AE171CA45A00C3ED03 /* SBJsonParser.h */,
+				2F0205AF171CA45A00C3ED03 /* SBJsonParser.m */,
+				2F0205B0171CA45A00C3ED03 /* SBJsonStreamParser.h */,
+				2F0205B1171CA45A00C3ED03 /* SBJsonStreamParser.m */,
+				2F0205B2171CA45A00C3ED03 /* SBJsonStreamParserAccumulator.h */,
+				2F0205B3171CA45A00C3ED03 /* SBJsonStreamParserAccumulator.m */,
+				2F0205B4171CA45A00C3ED03 /* SBJsonStreamParserAdapter.h */,
+				2F0205B5171CA45A00C3ED03 /* SBJsonStreamParserAdapter.m */,
+				2F0205B6171CA45A00C3ED03 /* SBJsonStreamParserState.h */,
+				2F0205B7171CA45A00C3ED03 /* SBJsonStreamParserState.m */,
+				2F0205B8171CA45A00C3ED03 /* SBJsonStreamTokeniser.h */,
+				2F0205B9171CA45A00C3ED03 /* SBJsonStreamTokeniser.m */,
+				2F0205BA171CA45A00C3ED03 /* SBJsonStreamWriter.h */,
+				2F0205BB171CA45A00C3ED03 /* SBJsonStreamWriter.m */,
+				2F0205BC171CA45A00C3ED03 /* SBJsonStreamWriterAccumulator.h */,
+				2F0205BD171CA45A00C3ED03 /* SBJsonStreamWriterAccumulator.m */,
+				2F0205BE171CA45A00C3ED03 /* SBJsonStreamWriterState.h */,
+				2F0205BF171CA45A00C3ED03 /* SBJsonStreamWriterState.m */,
+				2F0205C0171CA45A00C3ED03 /* SBJsonWriter.h */,
+				2F0205C1171CA45A00C3ED03 /* SBJsonWriter.m */,
+				2F0205AB171CA41200C3ED03 /* SBJson.h */,
 				2F4BD1C5170E941F00D20F4A /* libsqlite3.dylib */,
 				2F4BD1A5170DFFD300D20F4A /* MedicalRecord */,
 				2F4BD19E170DFFD300D20F4A /* Frameworks */,
@@ -97,6 +165,8 @@
 				2F4BD1BB170DFFD400D20F4A /* UWViewController.m */,
 				2F4BD1C2170E009500D20F4A /* RegisterController.h */,
 				2F4BD1C3170E009500D20F4A /* RegisterController.m */,
+				2FB7675A1713FC9000284D8D /* MedicalInfoController.h */,
+				2FB7675B1713FC9000284D8D /* MedicalInfoController.m */,
 				2F4BD1A6170DFFD300D20F4A /* Supporting Files */,
 			);
 			path = MedicalRecord;
@@ -183,10 +253,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F0205AC171CA41200C3ED03 /* SBJson.h in Sources */,
+				2F0205C2171CA45A00C3ED03 /* SBJsonParser.h in Sources */,
+				2F0205C3171CA45A00C3ED03 /* SBJsonParser.m in Sources */,
+				2F0205C4171CA45A00C3ED03 /* SBJsonStreamParser.h in Sources */,
+				2F0205C5171CA45A00C3ED03 /* SBJsonStreamParser.m in Sources */,
+				2F0205C6171CA45A00C3ED03 /* SBJsonStreamParserAccumulator.h in Sources */,
+				2F0205C7171CA45A00C3ED03 /* SBJsonStreamParserAccumulator.m in Sources */,
+				2F0205C8171CA45A00C3ED03 /* SBJsonStreamParserAdapter.h in Sources */,
+				2F0205C9171CA45A00C3ED03 /* SBJsonStreamParserAdapter.m in Sources */,
+				2F0205CA171CA45A00C3ED03 /* SBJsonStreamParserState.h in Sources */,
+				2F0205CB171CA45A00C3ED03 /* SBJsonStreamParserState.m in Sources */,
+				2F0205CC171CA45A00C3ED03 /* SBJsonStreamTokeniser.h in Sources */,
+				2F0205CD171CA45A00C3ED03 /* SBJsonStreamTokeniser.m in Sources */,
+				2F0205CE171CA45A00C3ED03 /* SBJsonStreamWriter.h in Sources */,
+				2F0205CF171CA45A00C3ED03 /* SBJsonStreamWriter.m in Sources */,
+				2F0205D0171CA45A00C3ED03 /* SBJsonStreamWriterAccumulator.h in Sources */,
+				2F0205D1171CA45A00C3ED03 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				2F0205D2171CA45A00C3ED03 /* SBJsonStreamWriterState.h in Sources */,
+				2F0205D3171CA45A00C3ED03 /* SBJsonStreamWriterState.m in Sources */,
+				2F0205D4171CA45A00C3ED03 /* SBJsonWriter.h in Sources */,
+				2F0205D5171CA45A00C3ED03 /* SBJsonWriter.m in Sources */,
 				2F4BD1AC170DFFD300D20F4A /* main.m in Sources */,
 				2F4BD1B0170DFFD300D20F4A /* UWAppDelegate.m in Sources */,
 				2F4BD1BC170DFFD400D20F4A /* UWViewController.m in Sources */,
 				2F4BD1C4170E009500D20F4A /* RegisterController.m in Sources */,
+				2FB7675C1713FC9000284D8D /* MedicalInfoController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +403,7 @@
 				2F4BD1C1170DFFD400D20F4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

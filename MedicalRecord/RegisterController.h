@@ -15,6 +15,6 @@
 //-(IBAction)back:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *email;
 @property (weak, nonatomic) IBOutlet UITextField *password;
-@property (weak, nonatomic) IBOutlet UITextField *username;
-
+@property (weak, nonatomic) IBOutlet UITextField *repeatPassword;
+@property (weak, nonatomic) IBOutlet UILabel *warning;
 @end

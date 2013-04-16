@@ -8,6 +8,8 @@
 
 #import "RegisterController.h"
 #import "sqlite3.h"
+#import "MedicalInfoController.h"
+#import "SBJson.h"
 @interface RegisterController ()
 
 
@@ -19,7 +21,8 @@
 
 @synthesize email = _email;
 @synthesize password = _password;
-@synthesize username = _username;
+@synthesize repeatPassword = _repeatPassword;
+@synthesize warning = _warning;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,7 +44,8 @@
         NSLog(@"success");
     }
      */
-    
+
+
     
 }
 
@@ -56,6 +60,7 @@
 }
 
 - (IBAction)registerInDatabase {
+    /*
     sqlite3 *database;
     int a = sqlite3_open("/Users/kevinqu/Desktop/Naive/MedicalRecord/MedicalRecord/record", &database);
     NSLog(@"%i\n", a);
@@ -82,6 +87,23 @@
     int result = sqlite3_exec(database, createSQL, NULL, NULL, &errormsg);
     NSLog(@"%i\n", result);
     sqlite3_close(database);
+    */
+    
+    //UIViewController *sub = [[UIViewController alloc] initWithNibName:@"MedicalInfo" bundle:[NSBundle mainBundle]];
+    //[self.view addSubview:sub.view];
+    if(![self.password.text isEqualToString: self.repeatPassword.text]){
+        self.warning.text = @"Password is not matching Repeat Password";
+        return;
+    }else if([self.email.text isEqualToString: @""]){
+        self.warning.text = @"Email can't be empty";
+        return;
+    }else{
+        SBJsonWriter *json = [[SBJsonWriter alloc] init];
+        NSDictionary *data = [NSDictionary dictionaryWithObjectsAndKeys:self.email.text, @"email",  self.password.text, @"password",  nil];
+        NSString *command = [json stringWithObject:data];
+        NSLog(@"%@\n", command);
+        [self performSegueWithIdentifier:@"info"  sender:self];
+    }
 }
 
 
