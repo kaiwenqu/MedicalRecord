@@ -11,8 +11,19 @@
 import gluon.utils as TT
 
 def index():
-    # return dict(message=T('Hello World'))
-    return "index"
+    return dict()
+
+def patientportal():
+    return dict()
+
+def profportal():
+    return dict()
+
+def patientdemographic():
+    return dict()
+
+def patient():
+    return dict()
 
 def user():
     """
@@ -116,16 +127,6 @@ def mobile_prof_login():
     user = rows[0]
     return response.json({'status':'success', 'result': user.md5})
 
-def patient_page_request():
-    md5 = request.vars.md5
-    rows = db(db.patient.md5==md5).select()
-    
-    if len(rows==0):
-        return response.json({'status': 'error', 'usage': 'incorrect md5'})
-    else:
-        firstname = rows[0].firstname
-        lastname = rows[0].lastname
-        return response.json({'status': 'success', 'firstname': firstname, 'lastname': lastname})
 @auth.requires_signature()
 def data():
     """
